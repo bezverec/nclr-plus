@@ -169,11 +169,11 @@ nclr-plus INPUT_DIR OUT_DIR --white-point d50 --delta-e ciede2000 --delta-e-max 
 
 ---
 
-## Limitations / TODO
+## Limitations
 
-- TIFF-only input for now (JPG/JP2 planned).
+- TIFF-only input for now.
 - Currently assumes **RGB** input (no grayscale/CMYK/alpha).
-- No compression controls for TIFF output yet (could be added: Deflate/LZW/ZSTD depending on encoder support).
+- No compression controls for TIFF output.
 
 ---
 
