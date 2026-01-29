@@ -1,0 +1,30 @@
+[package]
+name = "nclr-plus"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+# error handling / CLI
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+
+# parallel + fs walking
+rayon = "1.10"
+walkdir = "2.5"
+
+# image processing
+image = { version = "0.25", features = ["tiff"] }
+imageproc = "0.26"
+palette = "0.7"
+rgb = "0.8"
+
+# TIFF low-level I/O (DPI + ICC, strips, validators-safe)
+tiff = { version = "0.9.1", default-features = false }
+
+# ICC color management (LittleCMS 2)
+lcms2 = "6.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
