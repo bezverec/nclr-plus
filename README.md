@@ -83,7 +83,7 @@ $env:RUSTFLAGS="-C target-cpu=native"; cargo build --release
   .\target\release\nclr-plus.exe --help
   ```
 
-### `cargo install` (local path)
+### Installation (local path)
 
 ```bash
 cargo install --path .
