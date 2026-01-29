@@ -33,7 +33,7 @@ const TAG_ICC_PROFILE: Tag = Tag::Unknown(TAG_ICC_PROFILE_U16);
 
 #[derive(Parser, Debug)]
 #[command(
-    name="docfsr",
+    name="nclr-plus",
     about="Document-friendly enhance/upscale for TIFF scans (ICC + DPI preserved, lcms2)."
 )]
 struct Cli {
@@ -1512,3 +1512,4 @@ fn process_one(path: &Path, cli: &Cli) -> Result<()> {
 
     Ok(())
 }
+
