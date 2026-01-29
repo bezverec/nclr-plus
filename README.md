@@ -1,4 +1,4 @@
-# nclr-plus NDK Color Plus
+# nclr-plus: NDK Color Plus
 
 **nclr-plus** is a Rust CLI for “document-friendly” enhancement (and optional 2× upscale) of **RGB TIFF scans**, while preserving **DPI** and **embedded ICC profiles** and performing color management with **LittleCMS2**.
 
@@ -13,6 +13,10 @@ This tool does **not** replace properly calibrated book scanners or controlled d
 It should not be used on archival (master) scans except as a last resort.
 
 This tool adds more features to a more conservative **NCLR** tool (color management only), see https://github.com/bezverec/nclr
+
+## AI generated code disclosure
+
+The code is AI generated using ChatGPT model 5.2
 
 ---
 
@@ -38,10 +42,6 @@ This tool adds more features to a more conservative **NCLR** tool (color managem
 
 ### Currently supported input
 - **TIFF (.tif / .tiff)** only.
-
-> You asked about JPG / JP2: not yet. The code currently filters to TIFF only and reads via the `tiff` crate.
-> - **JPG** support would be relatively easy via the `image` crate decode path.
-> - **JP2** support would need an external decoder (OpenJPEG/Grok/Kakadu bindings) or a Rust crate that actually handles JP2 well.
 
 ### Output
 - **TIFF** (RGB, 16-bit or 8-bit depending on `--out-depth`)
